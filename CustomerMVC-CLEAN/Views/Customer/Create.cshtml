@@ -1,0 +1,44 @@
+﻿@model CustomerClassLibrary.Customer
+
+<h2>Add Customer</h2>
+
+<form asp-action="Create" method="post">
+
+    <p>
+        First Name:
+        <input asp-for="FirstName" />
+    </p>
+
+    <p>
+        Middle Name:
+        <input asp-for="MiddleName" />
+    </p>
+
+    <p>
+        Last Name:
+        <input asp-for="LastName" />
+    </p>
+
+    <p>
+        Street:
+        <input asp-for="Street" />
+    </p>
+
+    <p>
+        City:
+        <input asp-for="City" />
+    </p>
+
+    <p>
+        State:
+        <input asp-for="State" />
+    </p>
+
+    <p>
+        Zip:
+        <input asp-for="Zip" />
+    </p>
+
+    <button type="submit">Save</button>
+
+</form>
