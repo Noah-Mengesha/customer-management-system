@@ -1,0 +1,21 @@
+﻿@model CustomerClassLibrary.Customer
+
+<h2>Delete Customer</h2>
+
+<h3>Are you sure you want to delete this customer?</h3>
+
+<p>
+    @Model.FirstName @Model.LastName
+</p>
+
+<form asp-action="Delete" method="post">
+
+    <input type="hidden" asp-for="CustomerId" />
+
+    <button type="submit">Delete</button>
+
+</form>
+
+<p>
+    <a asp-action="Index">Cancel</a>
+</p>
